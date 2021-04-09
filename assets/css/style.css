@@ -441,8 +441,7 @@ section {
   z-index: 3;
   position: absolute;
   transition: all ease-in-out 0.3s;
-/*  display: flex;*/
-  width: 100%;
+  display: inline-flex;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a {
