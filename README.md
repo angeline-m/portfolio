@@ -1,5 +1,5 @@
 # Angeline Manabat Portfolio
-This is my [https://angeline-m.github.io/portfolio/](portfolio website), created using a BootstrapMade template (iPortfolio) on 2020/04/08. This project uses:
+This is my [portfolio page](https://angeline-m.github.io/portfolio/), created using a BootstrapMade template (iPortfolio) on 2020/04/08. This project uses:
 
 - Bootstrap v4.6
 - Box Icons & IcoFont for icons
