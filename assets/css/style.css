@@ -702,7 +702,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"],
-.form-btn {
+.form-btn button {
     background: #b897cf;
     border: 0;
     padding: 10px 24px;
@@ -712,7 +712,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover,
-.form-btn:hover {
+.form-btn button:hover {
     background: #c8a9df;
 }
 
