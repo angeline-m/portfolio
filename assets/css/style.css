@@ -353,6 +353,7 @@ section {
     margin-bottom: 0;
 }
 
+
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
@@ -456,12 +457,11 @@ section {
 /*--------------------------------------------------------------
 # Skills
 --------------------------------------------------------------*/
-
 /* .skills .icon-box {
     margin-bottom: 20px;
-  }
-  
-  .skills .icon {
+}
+
+.skills .icon {
     float: left;
     display: flex;
     align-items: center;
@@ -472,41 +472,41 @@ section {
     border-radius: 50%;
     transition: 0.5s;
     border: 1px solid #b897cf;
-  }
-  
-  .skills .icon i {
+}
+
+.skills .icon i {
     color: #fff;
     font-size: 24px;
-  }
-  
-  .skills .icon-box:hover .icon {
+}
+
+.skills .icon-box:hover .icon {
     background: #fff;
-  }
-  
-  .skills .icon-box:hover .icon i {
+}
+
+.skills .icon-box:hover .icon i {
     color: #b897cf;
-  }
-  
-  .skills .title {
+}
+
+.skills .title {
     margin-left: 80px;
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
-  }
-  
-  .skills .title a {
+}
+
+.skills .title a {
     color: #343a40;
-  }
-  
-  .skills .title a:hover {
+}
+
+.skills .title a:hover {
     color: #b897cf;
-  }
-  
-  .skills .description {
+}
+
+.skills .description {
     margin-left: 80px;
     line-height: 24px;
     font-size: 14px;
-  } */
+} */
 
 
 /*--------------------------------------------------------------
