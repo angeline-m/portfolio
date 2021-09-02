@@ -495,7 +495,7 @@ section {
     margin-bottom: 20px;
 }
 
-.skills .icon {
+.skills .icon-box {
     float: left;
     display: flex;
     align-items: center;
@@ -508,7 +508,7 @@ section {
     border: 1px solid #b897cf;
 }
 
-.skills .icon i {
+.skills .icon-box i {
     color: #fff;
     font-size: 24px;
 }
