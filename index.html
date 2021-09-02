@@ -422,20 +422,20 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Name</label>
-                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 characters for your name" />
+                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 characters for your name" required/>
                         </div>
                         <div class="form-group col-md-6">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                            <input type="email" class="form-control" name="_replyto" id="email" data-rule="email" data-msg="Please enter a valid email" required/>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="subject">Subject</label>
-                        <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 characters for the subject" />
+                        <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 characters for the subject" required/>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for me"></textarea>
+                        <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for me" required></textarea>
                     </div>
                     <!-- <div class="mb-3">
                         <div class="loading">Loading</div>
