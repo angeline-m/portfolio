@@ -508,6 +508,9 @@ section {
     font-size: 14px;
 } */
 
+.skills .description {
+    margin-bottom: 24px;
+}
 
 /*--------------------------------------------------------------
 # Contact
