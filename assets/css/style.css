@@ -31,6 +31,16 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #c8a9df;
+  }
+  
+  ::selection {
+    color: white;
+    background: #c8a9df;
+  }
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
