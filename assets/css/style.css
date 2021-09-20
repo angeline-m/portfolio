@@ -768,6 +768,10 @@ section {
     .breadcrumbs ol li {
         display: inline-block;
     }
+
+    p.description {
+        display: none;
+    }
 }
 
 /*--------------------------------------------------------------
