@@ -769,7 +769,7 @@ section {
         display: inline-block;
     }
 
-    p.description {
+    .portfolio-info > p {
         display: none;
     }
 }
