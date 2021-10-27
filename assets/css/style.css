@@ -151,23 +151,22 @@ h6 {
 --------------------------------------------------------------*/
 
 .profile p {
-    color: #fff;
-    margin: 5px 0 30px;
+    color: #c8a9df;
+    margin: 5px 0 10px;
     /* font-size: 26px; */
     font-family: "Poppins", sans-serif;
     text-align: center;
+    letter-spacing: 1px;
 }
 
-.profile p span {
-    color: #fff;
-    padding-bottom: 4px;
-    letter-spacing: 1px;
-    border-bottom: 3px solid #b897cf;
-}
+/* .profile p span {
+    padding-bottom: 0;
+    border-bottom: 1px solid #b897cf;
+} */
 
 /* Desktop Navigation */
 .nav-menu {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .nav-menu * {
