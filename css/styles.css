@@ -354,6 +354,7 @@ form textarea {
     border-radius: 5px;
     padding: 12px;
     color: var(--purple);
+    background-color: var(--background);
 }
 
 form textarea {
