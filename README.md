@@ -1,9 +1,10 @@
 # Angeline Manabat Portfolio
-This is my [portfolio page](https://angeline-m.github.io/portfolio/), created using a BootstrapMade template (iPortfolio) on 2020/04/08. This project uses:
+This is my [portfolio website](https://angeline-m.github.io/portfolio/), redesigned in January 2022. This website uses the following:
 
-- Bootstrap v4.6
-- Box Icons & IcoFont for icons
+- HTML5
+- CSS3
+- JavaScript
+- Slick
+- Font Awesome
 - Google Fonts
-- VenoBox for modals
-- Owl Carousel for image carousels
-- AOS: Animate on Scroll library
+- jQuery

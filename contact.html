@@ -28,7 +28,7 @@
     <link href="css/styles.css" rel="stylesheet">
 </head>
 
-<body class="home-body">
+<body>
     <header>
         <div class="container">
             <div class="mobile-menu">
@@ -49,19 +49,23 @@
         </div>
     </header>
     <main>
-        <div class="container home-screen">
-            <h2 class="sr-only">Introduction</h2>
-            <p>Hi! I'm Angeline, a <span class="job">web developer</span>.</p>
-            <p>I love creating beautiful websites and applications.</p>
-            <a href="/projects.html" class="project-btn">
-                View Projects
-            </a>
-        </div>
-        <div class="wave blue-wave">
-
-        </div>
-        <div class="wave pink-wave">
-
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you prefer to email, my email address is <a href="mailto:afidesmanabat@gmail.com" target="_blank" class="highlight">angelinefmanabat@gmail.com</a>.</p>
+            <p>You can connect with me on <a href="https://www.linkedin.com/in/angeline-manabat/" target="_blank" class="highlight">LinkedIn</a>. You can also check out my <a href="https://github.com/angeline-m" target="_blank" class="highlight">GitHub</a> and <a href="https://www.behance.net/angeline-manabat" target="_blank" class="highlight">Behance</a> accounts.</p>
+            <form action="https://formspree.io/f/xpzkryob" method="POST">
+                <div class="contact-info">
+                    <label class="sr-only">Name</label>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <label class="sr-only">Email</label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <label class="sr-only">Subject</label>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <label class="sr-only">Message</label>
+                <textarea name="message" placeholder="Message" reqiured></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </div>
     </main>
     <footer>
