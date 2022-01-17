@@ -98,13 +98,18 @@ a.highlight {
     text-decoration: underline;
 }
 
+section.content a.highlight {
+    font-weight: 600;
+}
+
 a.highlight:hover {
     color: var(--grey);
     transition: all 0.5s ease;
 }
 
-.slideshow {
-    margin: 0 24px;
+section.content div.slideshow {
+    margin: 24px 24px 48px;
+    padding-left: 12px;
 }
 
 /* Header Styles */
@@ -499,9 +504,9 @@ form button:hover {
     color: var(--white);
     text-align: center;
     padding: 10px 12px;
-    border-radius: 20px;
     display: block;
     font-size: 1rem;
+    letter-spacing: 0.5px;
 }
 
 .project-link:hover a {
@@ -564,14 +569,21 @@ form button:hover {
 .slide {
     width: fit-content;
     padding: 0 24px;
+    color: var(--grey);
+}
+
+.slide a {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.slide a:hover {
+    cursor: zoom-in;
 }
 
 .slide img {
     width: 100%;
-}
-
-.slide p:last-of-type {
-    margin-bottom: 0;
 }
 
 .slick-prev:before, .slick-next:before{
@@ -839,6 +851,11 @@ div.purple {
         margin-left: 210px;
     }
 
+    .slide img {
+        width: 800px;
+        margin: auto;
+    }
+
 }
 
 @media (min-width: 880px) {
@@ -922,7 +939,8 @@ div.purple {
     /* Give for Good page */
 
     .gfg-logo {
-        width: 800px;
+        width: 600px;
+        margin-bottom: 24px;
     }
 
 }
