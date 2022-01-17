@@ -509,6 +509,10 @@ form button:hover {
     transition: all 0.5s ease;
 }
 
+.content {
+    margin-bottom: 48px;
+}
+
 .content h3 {
     color: var(--grey);
     font-weight: 500;
@@ -555,6 +559,23 @@ form button:hover {
     text-transform: uppercase;
     font-size: 0.75rem;
     margin-top: 8px;
+}
+
+.slide {
+    width: fit-content;
+    padding: 0 24px;
+}
+
+.slide img {
+    width: 100%;
+}
+
+.slide p:last-of-type {
+    margin-bottom: 0;
+}
+
+.slick-prev:before, .slick-next:before{
+    color:var(--purple);
 }
 
 /* Give for Good page */
@@ -685,19 +706,6 @@ div.purple {
     font-style: italic;
     color: var(--grey);
     text-align: center;
-}
-
-.slide {
-    width: fit-content;
-    padding: 24px;
-}
-
-.slide img {
-    width: 100%;
-}
-
-.slick-prev:before, .slick-next:before{
-    color:var(--purple);
 }
 
 @media (max-width: 330px) {
@@ -909,6 +917,12 @@ div.purple {
 
     main {
         padding: 0;
+    }
+
+    /* Give for Good page */
+
+    .gfg-logo {
+        width: 800px;
     }
 
 }
