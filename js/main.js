@@ -3,4 +3,10 @@ $(document).ready(function(){
         $("nav").toggle();
         e.preventDefault();
     });
+    $('.slides-register').slick({
+        infinite: true,
+        dots: true,
+        adaptiveHeight: true,
+        arrows: true,
+      });
 });
