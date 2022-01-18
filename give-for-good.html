@@ -56,22 +56,34 @@
         <div class="container">
             <h2>Give for Good Website</h2>
             <section class="sidebar">
-                <ul>
+                <ul class="table">
                     <li><a href="#introduction">Introduction</a></li>
                     <li><a href="#tech">Technology</a></li>
                     <li><a href="#tasks">Tasks</a></li>
-                    <li><a href="">Challenges</a></li>
                     <li><a href="">Reflections</a></li>
                 </ul>
-                <div class="project-link">
-                    <a href="https://giveforgoodapp.ca/" target="_blank">Live Website</a>
+                <div class="project-info">
+                    <div class="project-link site-link">
+                        <a href="https://giveforgoodapp.ca/" target="_blank">Live Website</a>
+                    </div>
+                    <div class="project-summary">
+                        <div>
+                            <p class="title">Role</p>
+                            <p>Developer, Designer</p>
+                        </div>
+                        <div>
+                            <p class="title">Date</p>
+                            <p>Sep - Dec 2021</p>
+                        </div>
+                    </div>
                 </div>
+                
             </section>
             <section class="content">
                 <section id="introduction">
                     <h3>Introduction</h3>
                     <img src="/img/give-for-good/GFG_Logo.png" alt="Give for Good logo" class="gfg-logo">
-                    <p>In the Fall 2021 semester, I endeavored my <span class="highlight">capstone project</span>, the final project of the Digital Media & IT program at NAIT (Northern Alberta Institute of Technology). My capstone project involved working with the <a href="https://giveforgood.ca/" target="_blank" class="highlight">Give for Good foundation</a>, a non-profit organization that aims to connect those in need with those who have something to give. I worked with 4 other student developers to help Give for Good bring their mission to life.</p>
+                    <p>In the Fall 2021 semester, I endeavored my <span class="highlight">capstone project</span>, the final project of the Digital Media & IT program at NAIT (Northern Alberta Institute of Technology). My capstone project involved working with the <a href="https://giveforgood.ca/" target="_blank" class="highlight">Give for Good foundation</a>, a non-profit organization that aims to connect those in need with those who have something to give. I worked with 4 other student developers as a <span class="highlight">developer</span> and <span class="highlight">designer</span> to help Give for Good bring their mission to life.</p>
                     <p>Give for Good wished to have a <span class="highlight">classified advertisement website</span> where people, businesses, and charities can post about goods or services they are willing to donate (those that can give are <i>givers</i>). Those in need can view these posts and create posts requesting items or services they require. Charities can also request goods/services and manage users under their charity that can ask for goods/services (called <i>receivers</i>).</p>
                     <p>A previous capstone team already laid the foundation and created the first version of the website. Many basic features were already implemented, but some were not or were broken. In addition, some bugs needed fixing and the website needed a redesign to meet branding guidelines. Our team's goal was to bring the website closer to a <span class="highlight">launch-ready state</span>.</p>
                 </section>
@@ -127,8 +139,8 @@
                             <figcaption>MySQL</figcaption>
                         </figure>
                     </div>
-                    <p>This website was built using the <span class="highlight">TALL stack</span>: Tailwind CSS, AlpineJS, Laravel, and Livewire. <span class="highlight">Laravel, a PHP framework</span> that was installed via Laravel Breeze. Laravel Breeze's page templates are styled with <span class="highlight">Tailwind CSS</span>. For the website redesign, I attempted to remove as much of the Tailwind references as I could and utilize custom styling.</p>
-                    <p><span class="highlight">AlpineJS</span> is a JavaScript framework used to add interactivity to page features. <span class="highlight">Livewire</span> is a full-stack framework for Laravel for creating dynamic interfaces, similar to React. This PHP-based project uses <span class="highlight">MySQL</span> and <span class="highlight">phpMyAdmin</span> for its database administration.</p>
+                    <p>The website was built using the <span class="highlight">TALL stack</span>: Tailwind CSS, AlpineJS, Laravel, and Livewire. <span class="highlight">Laravel, a PHP framework</span> that was installed via Laravel Breeze. The pages were styled with <span class="highlight">Tailwind CSS</span>. For the website redesign, I attempted to remove as much of the Tailwind references as I could and utilize custom styling.</p>
+                    <p><span class="highlight">AlpineJS</span> is a JavaScript framework used to add interactivity to page features. <span class="highlight">Livewire</span> is a full-stack framework for Laravel for creating dynamic interfaces, similar to React. This PHP-based project used <span class="highlight">MySQL</span> and <span class="highlight">phpMyAdmin</span> for its database administration.</p>
                 </section>
                 <section id="tasks">
                     <h3>Tasks</h3>
@@ -165,20 +177,143 @@
                         </div>
                     </div>
                     <p class="guidelines-caption">Give for Good design guidelines & color palette</p>
-                    <h4>Changes to the Registration Process</h4>
-                    <div class="slideshow slides-register">
-                        <div class="slide">
-                            <a href="img/give-for-good/Old-Registration.jpg" target="_blank"><img src="img/give-for-good/Old-Registration.jpg" alt="Screenshot of the old 'registration' page"></a>
-                            <p>The biggest task I took part in was creating the new registration pages. The old registration process involved signing up via the register page with an email and password, then selecting the account type on the dashboard page.</p>
+                    <section>
+                        <h4>Changes to the Registration Process</h4>
+                        <div class="slideshow slides-register horizontal-slides">
+                            <div class="slide">
+                                <a href="img/give-for-good/Old-Registration.jpg" target="_blank"><img src="img/give-for-good/Old-Registration.jpg" alt="Screenshot of the old 'registration' page"></a>
+                                <p>The biggest task I took part in was creating the new registration pages. The old registration process involved signing up via the register page with an email and password, then selecting the account type on the dashboard page.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Registration-Drawing.jpg" target="_blank"><img src="img/give-for-good/Registration-Drawing.jpg" alt="Drawing of the new registration form"></a>
+                                <p>The client wanted to remove the account choice page as per the audit and replace it with a multi-form process, with additional forms showing depending on the account type the user chooses upon registering. The above image is the drawing the client provided (left and middle sections).</p>
+                            </div>
                         </div>
-                        <div class="slide">
-                            <a href="img/give-for-good/Registration-Drawing.jpg" target="_blank"><img src="img/give-for-good/Registration-Drawing.jpg" alt="Drawing of the new registration form"></a>
-                            <p>The client wanted to remove the account choice page as per the audit and replace it with a multi-form process, with additional forms showing depending on the account type the user chooses upon registering. The above image is the drawing the client provided (left and middle sections).</p>
+                        <h4>Registration Pathway Redesign</h4>
+                        <p>I was responsible for creating a mockup of the new registration pages based on the client's drawing. I noted that the client's drawing had multiple submit buttons for the different forms the user fills out depending on their account type. Thinking as a developer and general website user, I knew that displaying multiple forms to submit was not ideal from a back-end and UX perspective, as a long multi-form page could turn away potential users.</p>
+                        <p>I asked the team if we were capable of creating a multi-page registration pathway in case I did not code the back-end. I envisioned the main registration "form", with the other "forms" appearing on another page. Once I was assured that it was possible,  I created the mockups in <span class="highlight">Adobe Photoshop</span> following the audit design guidelines.</p>
+                        <div class="slideshow slides-mockup vertical-slides">
+                            <div class="slide">
+                                <a href="img/give-for-good/Mockup-1.jpg" target="_blank"><img src="img/give-for-good/Mockup-1.jpg" alt="Mockup one of the registration process"></a>
+                                <p>Mockup of the default registration form. Other parts of the form will show/hide depending on the user's selections.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Mockup-2.jpg" target="_blank"><img src="img/give-for-good/Mockup-2.jpg" alt="Mockup two of the registration process for business accounts"></a>
+                                <p>If a business account is being created, business information fields will appear.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Mockup-3.jpg" target="_blank"><img src="img/give-for-good/Mockup-3.jpg" alt="Mockup three of the registration process"></a>
+                                <p>If the user is creating a non-business account, they are shown an information box explaining that all accounts can donate goods/services. Then, they must select an account type: giver, receiver, or charity. If they select a giver account, the bottom button turns into a submit button that finishes the registration process. If they select a receiver or charity account, another form must be filled out on the next page.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Mockup-4.jpg" target="_blank"><img src="img/give-for-good/Mockup-4.jpg" alt="Mockup four of the registration process showing the receiver request form"></a>
+                                <p>Receiver accounts must submit a receiver account request. They submit a request reason and select their associated charity if they are affiliated with Give for Good. Upon completion, the account is created but does not have the receiver status until it is approved by the website administrator or their charity's administrator account.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Mockup-5.jpg" target="_blank"><img src="img/give-for-good/Mockup-5.jpg" alt="Mockup five of the registration process showing the charity request form"></a>
+                                <p>Charity accounts must submit a charity account request with appropriate information. Upon completion, the account is created but its status as a charity account is pending until the website administrator approves/rejects the request.</p>
+                            </div>
                         </div>
-                    </div>
-                    <h4>Registration Pathway Redesign</h4>
-                    <p>I was responsible for creating a mockup of the new registration pages based on the client's drawing. I noted that the client's drawing had multiple submit buttons for the different forms the user fills out depending on their account type. Thinking as a developer and general website user, I knew that submitting multiple forms was not ideal from a back-end and UX perspective. I also knew that showing multiple forms on one page would turn potential users away from seeing a long registration process laid out at once.</p>
-                    <p>I asked the team if we were capable of creating a multi-page registration pathway in case I did not code the back-end. I envisioned the main registration "form", with the other "forms" appearing on another page. Once I was assured that it was possible,  I created the mockups in <span class="highlight">Adobe Photoshop</span> following the audit design guidelines.</p>
+                    </section>
+                    <section>
+                        <h4>New Registration Pages</h4>
+                        <div class="slideshow slides-reg vertical-slides">
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-1.jpg" target="_blank"><img src="img/give-for-good/Reg-1.jpg" alt="Registration page screenshot with default form"></a>
+                                <p>Default registration form on the website. We decided to remove the phone number and description fields as those fields show up in the upper section for business accounts.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-2.jpg" target="_blank"><img src="img/give-for-good/Reg-2.jpg" alt="Registration page screenshot for business account"></a>
+                                <p>Registration form for business accounts.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-3.jpg" target="_blank"><img src="img/give-for-good/Reg-3.jpg" alt="Registration page screenshot for non-business accounts"></a>
+                                <p>Registration form for non-business accounts. Note that the phone number, description, and anonymous feature show up by default.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-4.jpg" target="_blank"><img src="img/give-for-good/Reg-4.jpg" alt="Registration page screenshot for charity accounts"></a>
+                                <p>Registration form for charity accounts. Note that the phone number, description, and anonymous feature disappear for charity accounts. We did not want to have those fields appear if the user selected the giver or receiver accounts as that would have been confusing for users.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-5.jpg" target="_blank"><img src="img/give-for-good/Reg-5.jpg" alt="Registration page receiver request form screenshot"></a>
+                                <p>Receiver request form.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Reg-6.jpg" target="_blank"><img src="img/give-for-good/Reg-6.jpg" alt="Registration page charity request form screenshot"></a>
+                                <p>Charity request form. The data from the previous page will persist, so if the phone number field on the previous page was filled out, that information would populate the primary contact phone number field. Note that we added an email field for the secondary contact, but not the primary contact as their email is the email that was used upon registering.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Dashboard Redesign</h4>
+                        <p>The only other changes the client explicitly provided was a division of the dashboard page. We did not have time for a proper mockup to be created, but the client's requirements were very clear.</p>
+                        <div class="slideshow slides-dashboard horizontal-slides">
+                            <div class="slide">
+                                <a href="img/give-for-good/Registration-Drawing.jpg" target="_blank"><img src="img/give-for-good/Registration-Drawing.jpg" alt="Drawing of the new dashboard"></a>
+                                <p>(Dashboard drawing on right section of image.) The client wanted to make it clear to users what they are able to do, and requested the dashboard be divided into 2 parts: one section for those in need and one section for those who can give.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Dash-Mockup-1.jpg" target="_blank"><img src="img/give-for-good/Dash-Mockup-1.jpg" alt="Mockup one of the new dashboard"></a>
+                                <p class="notice">click image for full view</p>
+                                <p>The business analyst student converted the client's drawing into a readable diagram for the developers. The post feed has a categories sidebar for filtering on the left. The client specifically requested for 4 buttons on the dashboard page: a button to view giving (donation) posts, a button to give (donate), a button to view request posts, and a button to make a request.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/Dash-Mockup-2.jpg" target="_blank"><img src="img/give-for-good/Dash-Mockup-2.jpg" alt="Mockup two of the new dashboard"></a>
+                                <p>If the user does not have the ability to receive, then they cannot make request posts nor view giving posts.</p>
+                            </div>
+                        </div>
+                        <p>I decided to split the dashboard into the following sections: one section with the buttons to create a post and one section with the posts feed. The user can interact with each section according to what they want to post/view: giving or receiving posts. For cohesiveness, the dashboard used collapsible sections.</p>
+                        <div class="slideshow slides-dash-one horizontal-slides">
+                            <div class="slide">
+                                <a href="img/give-for-good/New-Dash-1.jpg" target="_blank"><img src="img/give-for-good/New-Dash-1.jpg" alt="New dashboard page"></a>
+                                <p>New dashboard with buttons to toggle the "make post" and post feed sections.</p>
+                            </div>
+                            <div class="slide">
+                                <a href="img/give-for-good/New-Dash-2.jpg" target="_blank"><img src="img/give-for-good/New-Dash-2.jpg" alt="New dashboard page with make post section expanded"></a>
+                                <p>"Make post" section expanded. If the user is not a receiver, they will only see the button to create giving posts.</p>
+                            </div>
+                        </div>
+                        <div class="slideshow slides-dash-two horizontal-slides dual-slides">
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Dash-Old-Give.jpg" target="_blank"><img src="img/give-for-good/Dash-Old-Give.jpg" alt="Old dashboard page viewing the giving posts"></a>
+                                    <a href="img/give-for-good/Dash-New-Give.jpg" target="_blank"><img src="img/give-for-good/Dash-New-Give.jpg" alt="New dashboard page viewing the giving posts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Old (left) and new (right) dashboard. The client wanted big buttons to filter between viewing giving and receiving posts. I opted for tab-style buttons, which gave the illusion of two post feeds for each post type.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Dash-Old-Rec.jpg" target="_blank"><img src="img/give-for-good/Dash-Old-Rec.jpg" alt="Old dashboard page viewing the receiving posts"></a>
+                                    <a href="img/give-for-good/Dash-New-Rec.jpg" target="_blank"><img src="img/give-for-good/Dash-New-Rec.jpg" alt="New dashboard page viewing the receiving posts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Old (left) and new (right) dashboard showing the receiving posts.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <p>I was unable to make mockups for the rest of the website due to time constraints. Luckily, because the other pages already existed, I was able to redesign them without a mockup.</p>
+                    <section>
+                        <h4>Post Pages Redesign</h4>
+                        <div class="slideshow slides-site-public horizontal-slides dual-slides">
+                            <div class="slide dual-slide">
+                                <div class="two-img post-slides">
+                                    <a href="img/give-for-good/View-Post-Old.jpg" target="_blank"><img src="img/give-for-good/View-Post-Old.jpg" alt="Old post details page"></a>
+                                    <a href="img/give-for-good/View-Post-New.jpg" target="_blank"><img src="img/give-for-good/View-Post-New.jpg" alt="New post details page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Old and new post details page. Note that post details such as category, condition, quantity, and quality are now shown if given. Whitespace will show for multi-paragraph descriptions (not shown in images). To address issues with maps integration, a postal code is given and a link is provided to view the postal code on Google Maps. The client desired to have the post author's email displayed on the page, so it is displayed on the contact form.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/View-Post-Old.jpg" target="_blank"><img src="img/give-for-good/View-Post-Old.jpg" alt="Old post details page"></a>
+                                    <a href="img/give-for-good/View-Post-New.jpg" target="_blank"><img src="img/give-for-good/View-Post-New.jpg" alt="New post details page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Change this.</p>
+                            </div>
+                        </div>
+                    </section>
                 </section>
             </section>
         </div>
