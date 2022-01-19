@@ -60,12 +60,12 @@
                     <li><a href="#introduction">Introduction</a></li>
                     <li><a href="#tech">Technology</a></li>
                     <li><a href="#tasks">Tasks</a></li>
-                    <li><a href="">Reflections</a></li>
+                    <li><a href="#reflections">Reflections</a></li>
                 </ul>
                 <div class="project-info">
-                    <div class="project-link site-link">
+                    <!-- <div class="project-link site-link">
                         <a href="https://giveforgoodapp.ca/" target="_blank">Live Website</a>
-                    </div>
+                    </div> -->
                     <div class="project-summary">
                         <div>
                             <p class="title">Role</p>
@@ -85,7 +85,8 @@
                     <img src="/img/give-for-good/GFG_Logo.png" alt="Give for Good logo" class="gfg-logo">
                     <p>In the Fall 2021 semester, I endeavored my <span class="highlight">capstone project</span>, the final project of the Digital Media & IT program at NAIT (Northern Alberta Institute of Technology). My capstone project involved working with the <a href="https://giveforgood.ca/" target="_blank" class="highlight">Give for Good foundation</a>, a non-profit organization that aims to connect those in need with those who have something to give. I worked with 4 other student developers as a <span class="highlight">developer</span> and <span class="highlight">designer</span> to help Give for Good bring their mission to life.</p>
                     <p>Give for Good wished to have a <span class="highlight">classified advertisement website</span> where people, businesses, and charities can post about goods or services they are willing to donate (those that can give are <i>givers</i>). Those in need can view these posts and create posts requesting items or services they require. Charities can also request goods/services and manage users under their charity that can ask for goods/services (called <i>receivers</i>).</p>
-                    <p>A previous capstone team already laid the foundation and created the first version of the website. Many basic features were already implemented, but some were not or were broken. In addition, some bugs needed fixing and the website needed a redesign to meet branding guidelines. Our team's goal was to bring the website closer to a <span class="highlight">launch-ready state</span>.</p>
+                    <p>A previous capstone team already laid the foundation and created the first version of the website. Many basic features were already implemented, but some were not and some of the features that existed were broken. Our team's goal was to bring the website closer to a <span class="highlight">launch-ready state</span>.</p>
+                    <p>This project was done using the <span class="highlight">Scrum framework</span>, a subset of the <span class="highlight">Agile</span> technique. The business analyst student acted as the Scrum master and acting product owner (when necessary). The five developers on our team made up the development team. We completed 4 two-week sprints and 1 week-long sprint.</p>
                 </section>
                 <section id="tech">
                     <h3>Technology</h3>
@@ -144,7 +145,7 @@
                 </section>
                 <section id="tasks">
                     <h3>Tasks</h3>
-                    <p>My role as a developer meant that I (and the rest of the team) was responsible for <span class="highlight">adding new features and pages</span>, as well as <span class="highlight">fixing existing bugs</span>. As the design lead, I was tasked with <span class="highlight">creating a mockup for new pages</span> and <redesigning class="highlight">redesigning existing pages</span>.</p>
+                    <p>My role as a developer meant that I (and the rest of the team) was responsible for <span class="highlight">adding new features and pages</span>, as well as <span class="highlight">fixing existing bugs</span>. As the designer, I was tasked with <span class="highlight">creating a mockup for new pages</span> and <redesigning class="highlight">redesigning existing pages</span>.</p>
                     <p>The previous version of the website was not responsive, user-friendly, nor cohesive with Give for Good's branding style. An audit was performed to give UI & UX suggestions, which our team worked off to fix UI issues. Guidelines for language, website flow, branding colors, typography, and HTML element styles were provided.</p>
                     <div class="guidelines">
                         <div class="elements">
@@ -220,7 +221,7 @@
                         <div class="slideshow slides-reg vertical-slides">
                             <div class="slide">
                                 <a href="img/give-for-good/Reg-1.jpg" target="_blank"><img src="img/give-for-good/Reg-1.jpg" alt="Registration page screenshot with default form"></a>
-                                <p>Default registration form on the website. We decided to remove the phone number and description fields as those fields show up in the upper section for business accounts.</p>
+                                <p>Default registration form on the website. We removed the phone number and description fields as those fields show up in the upper section for business accounts.</p>
                             </div>
                             <div class="slide">
                                 <a href="img/give-for-good/Reg-2.jpg" target="_blank"><img src="img/give-for-good/Reg-2.jpg" alt="Registration page screenshot for business account"></a>
@@ -236,11 +237,11 @@
                             </div>
                             <div class="slide">
                                 <a href="img/give-for-good/Reg-5.jpg" target="_blank"><img src="img/give-for-good/Reg-5.jpg" alt="Registration page receiver request form screenshot"></a>
-                                <p>Receiver request form.</p>
+                                <p>Receiver request form. Receiver accounts must get approval from the website or charity administrator, otherwise the account operates like a giver account.</p>
                             </div>
                             <div class="slide">
                                 <a href="img/give-for-good/Reg-6.jpg" target="_blank"><img src="img/give-for-good/Reg-6.jpg" alt="Registration page charity request form screenshot"></a>
-                                <p>Charity request form. The data from the previous page will persist, so if the phone number field on the previous page was filled out, that information would populate the primary contact phone number field. Note that we added an email field for the secondary contact, but not the primary contact as their email is the email that was used upon registering.</p>
+                                <p>Charity request form. Charity accounts must get approval from the website administrator, otherwise the account operates like a giver account. The data from the previous page will persist, so if the phone number field on the previous page was filled out, that information would populate the primary contact phone number field. Note that we added an email field for the secondary contact, but not the primary contact as their email is the email that was used upon registering.</p>
                             </div>
                         </div>
                     </section>
@@ -262,17 +263,9 @@
                                 <p>If the user does not have the ability to receive, then they cannot make request posts nor view giving posts.</p>
                             </div>
                         </div>
-                        <p>I decided to split the dashboard into the following sections: one section with the buttons to create a post and one section with the posts feed. The user can interact with each section according to what they want to post/view: giving or receiving posts. For cohesiveness, the dashboard used collapsible sections.</p>
-                        <div class="slideshow slides-dash-one horizontal-slides">
-                            <div class="slide">
-                                <a href="img/give-for-good/New-Dash-1.jpg" target="_blank"><img src="img/give-for-good/New-Dash-1.jpg" alt="New dashboard page"></a>
-                                <p>New dashboard with buttons to toggle the "make post" and post feed sections.</p>
-                            </div>
-                            <div class="slide">
-                                <a href="img/give-for-good/New-Dash-2.jpg" target="_blank"><img src="img/give-for-good/New-Dash-2.jpg" alt="New dashboard page with make post section expanded"></a>
-                                <p>"Make post" section expanded. If the user is not a receiver, they will only see the button to create giving posts.</p>
-                            </div>
-                        </div>
+                        <p>I split the dashboard into the following collapsible sections: a "make a post" section and the post feed section. The user can interact with each section according to what they want to post/view: giving or receiving posts.</p>
+                        <img src="img/give-for-good/GFG-Dash.gif" alt="Animated gif of the new Give for Good dashboard" class="dash-gif">
+                        <p class="dash-caption">New dashboard with buttons to toggle the "Make a Post" and post feed sections. If the user is not an approved receiver or charity, they will only see the "Make an offer" button.</p>
                         <div class="slideshow slides-dash-two horizontal-slides dual-slides">
                             <div class="slide dual-slide">
                                 <div class="two-img">
@@ -280,7 +273,7 @@
                                     <a href="img/give-for-good/Dash-New-Give.jpg" target="_blank"><img src="img/give-for-good/Dash-New-Give.jpg" alt="New dashboard page viewing the giving posts"></a>
                                 </div>
                                 <p class="notice">click image for full view</p>
-                                <p>Old (left) and new (right) dashboard. The client wanted big buttons to filter between viewing giving and receiving posts. I opted for tab-style buttons, which gave the illusion of two post feeds for each post type.</p>
+                                <p>Old (left/top on mobile) and new (right/bottom on mobile) dashboard. The client wanted big buttons to filter between viewing giving and receiving posts. I opted for tab-style buttons, which gave the illusion of two post feeds for each post type.</p>
                             </div>
                             <div class="slide dual-slide">
                                 <div class="two-img">
@@ -288,7 +281,7 @@
                                     <a href="img/give-for-good/Dash-New-Rec.jpg" target="_blank"><img src="img/give-for-good/Dash-New-Rec.jpg" alt="New dashboard page viewing the receiving posts"></a>
                                 </div>
                                 <p class="notice">click image for full view</p>
-                                <p>Old (left) and new (right) dashboard showing the receiving posts.</p>
+                                <p>Old and new dashboard showing the receiving posts.</p>
                             </div>
                         </div>
                     </section>
@@ -297,23 +290,187 @@
                         <h4>Post Pages Redesign</h4>
                         <div class="slideshow slides-site-public horizontal-slides dual-slides">
                             <div class="slide dual-slide">
-                                <div class="two-img post-slides">
-                                    <a href="img/give-for-good/View-Post-Old.jpg" target="_blank"><img src="img/give-for-good/View-Post-Old.jpg" alt="Old post details page"></a>
-                                    <a href="img/give-for-good/View-Post-New.jpg" target="_blank"><img src="img/give-for-good/View-Post-New.jpg" alt="New post details page"></a>
-                                </div>
-                                <p class="notice">click image for full view</p>
-                                <p>Old and new post details page. Note that post details such as category, condition, quantity, and quality are now shown if given. Whitespace will show for multi-paragraph descriptions (not shown in images). To address issues with maps integration, a postal code is given and a link is provided to view the postal code on Google Maps. The client desired to have the post author's email displayed on the page, so it is displayed on the contact form.</p>
-                            </div>
-                            <div class="slide dual-slide">
                                 <div class="two-img">
                                     <a href="img/give-for-good/View-Post-Old.jpg" target="_blank"><img src="img/give-for-good/View-Post-Old.jpg" alt="Old post details page"></a>
                                     <a href="img/give-for-good/View-Post-New.jpg" target="_blank"><img src="img/give-for-good/View-Post-New.jpg" alt="New post details page"></a>
                                 </div>
                                 <p class="notice">click image for full view</p>
-                                <p>Change this.</p>
+                                <p>Old and new post details page. Note that post details such as category, condition, quantity, and quality are now shown if given. Whitespace/line breaks will show for multi-paragraph descriptions (not shown in images). To address issues with maps integration, a postal code is given and a link is provided to view the postal code on Google Maps. The client desired to have the post author's email displayed on the page, so it is displayed on the contact form.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/New-Give-Old.jpg" target="_blank"><img src="img/give-for-good/New-Give-Old.jpg" alt="Old create post page for giving posts"></a>
+                                    <a href="img/give-for-good/New-Give-New.jpg" target="_blank"><img src="img/give-for-good/New-Give-New.jpg" alt="New create post page for giving posts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>The page to create a new posting was split separately for giving and request posts but they look identical (client requirement). Giving posts allowed up to 10 images (request posts permit 1 image). Each new image gets added via pressing the "Add Image" to add a new image upload button to the page. Our team fixed the bugs with this design, but were unable to change it to a single button that permitted selecting and uploading multiple images at once. The "Reset Images" button cleared all the images off the post.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Give-Post-Old.jpg" target="_blank"><img src="img/give-for-good/Give-Post-Old.jpg" alt="Old create post page for giving posts with populated form"></a>
+                                    <a href="img/give-for-good/Give-Post-New.jpg" target="_blank"><img src="img/give-for-good/Give-Post-New.jpg" alt="New create post page for giving posts with populated form"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Make post page for giving posts with all fields populated. My goal for this page was to make the image section as clear to the user as possible with the subpar image upload implementation. It is not pictured, but once the user has uploaded the maximum amount of images, the "Add Image" button turns yellow and instead says "Maximum Images Uploaded".</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/My-Posts-Old.jpg" target="_blank"><img src="img/give-for-good/My-Posts-Old.jpg" alt="Old user posts page"></a>
+                                    <a href="img/give-for-good/My-Posts-New.jpg" target="_blank"><img src="img/give-for-good/My-Posts-New.jpg" alt="New user posts page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>"My Posts" page. It is not shown, but on the old page, the ellipsis (...) opened a menu with more post actions once clicked. I turned this into a "More Actions" dropdown. In addition, whitespace/line breaks are shown for multi-paragraph descriptions on the new page and the descriptions will cut off after 4 lines. Clicking on the post title or image now takes you to the post page itself to view all its details.</p>
                             </div>
                         </div>
                     </section>
+                    <section>
+                        <h4>Profile Page Redesign</h4>
+                        <p>The profile page differs according to your account type (giver, receiver, business, and charity). Giver and receiver accounts have identical profile information sections, while business and charity accounts have unique ones.</p>
+                        <div class="slideshow slides-site-profile horizontal-slides dual-slides">
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Em-Pw-Old.jpg" target="_blank"><img src="img/give-for-good/Em-Pw-Old.jpg" alt="Old post details page"></a>
+                                    <a href="img/give-for-good/Em-Pw-New.jpg" target="_blank"><img src="img/give-for-good/Em-Pw-New.jpg" alt="New post details page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Every profile page has an update email and password section at the bottom.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Giver-Profile-Old.jpg" target="_blank"><img src="img/give-for-good/Giver-Profile-Old.jpg" alt="Old profile information section for giver accounts"></a>
+                                    <a href="img/give-for-good/Giver-Profile-New.jpg" target="_blank"><img src="img/give-for-good/Giver-Profile-New.jpg" alt="New profile information section for giver accounts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Profile information section for giver/receiver accounts.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Business-Profile-Old.jpg" target="_blank"><img src="img/give-for-good/Business-Profile-Old.jpg" alt="Old profile information section for business accounts"></a>
+                                    <a href="img/give-for-good/Business-Profile-New.jpg" target="_blank"><img src="img/give-for-good/Business-Profile-New.jpg" alt="New profile information section for business accounts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Profile information section for business accounts. Note that many fields, such as the profile image and prefer featured have been removed as per the client's request.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Charity-Profile-Old.jpg" target="_blank"><img src="img/give-for-good/Charity-Profile-Old.jpg" alt="Old profile information section for charity accounts"></a>
+                                    <a href="img/give-for-good/Charity-Profile-New.jpg" target="_blank"><img src="img/give-for-good/Charity-Profile-New.jpg" alt="New profile information section for charity accounts"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Profile information section for charity accounts. Note that many fields, such as the profile image, users served, reference information, and prefer featured have been removed as per the client's request.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Administrator Panel Redesign</h4>
+                        <p>The last pages that were redesigned were the administrator panel due to time constraints. I wanted to <span class="highlight">focus on redesigning the pages most user would see</span>. Because of time, I utilized Tailwind CSS classes for two-thirds of the styling and custom styling for the other third.</p>
+                        <p><span class="highlight">The administrator panel exists for two account types: the website administrator and approved charity accounts.</span> Website administrators have more features/pages on their administrator panel as their privileges extend to the entire website. Charity administrators are limited to managing users under their charity. <span class="highlight">The administrator panel looks identical for both accounts, so I will only show (select pages from) the website owner's administrator panel.</span></p>
+                        <div class="slideshow slides-site-profile horizontal-slides dual-slides">
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-1.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-1.jpg" alt="Old administrator panel homepage"></a>
+                                    <a href="img/give-for-good/Admin-New-1.jpg" target="_blank"><img src="img/give-for-good/Admin-New-1.jpg" alt="New administrator panel homepage"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Administrator panel homepage. I didn't have time to add meaningful content to this page, so I simply redesigned it. Note that we added more pages to the administrator panel for both the website owner and charity accounts.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-2.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-2.jpg" alt="Old administrator panel receiver requests page"></a>
+                                    <a href="img/give-for-good/Admin-New-2.jpg" target="_blank"><img src="img/give-for-good/Admin-New-2.jpg" alt="New administrator panel receiver requests page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Receiver requests page. Charity accounts will only see receiver requests for users applying under their charity.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-3.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-3.jpg" alt="Old administrator panel receiver request modal"></a>
+                                    <a href="img/give-for-good/Admin-New-3.jpg" target="_blank"><img src="img/give-for-good/Admin-New-3.jpg" alt="New administrator panel receiver request modal"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Receiver request modal with more information. Note that if a user is appealing a request rejection, the modal will display the appeal and rejection details.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-4.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-4.jpg" alt="Old administrator panel 'Charity Account Requests' page"></a>
+                                    <a href="img/give-for-good/Admin-New-4.jpg" target="_blank"><img src="img/give-for-good/Admin-New-4.jpg" alt="New administrator panel 'Charity Account Requests' page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Charity account requests page. This page is exclusive to the website owner administrator panel.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-5.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-5.jpg" alt="Old administrator panel charity request modal"></a>
+                                    <a href="img/give-for-good/Admin-New-5.jpg" target="_blank"><img src="img/give-for-good/Admin-New-5.jpg" alt="New administrator panel charity request modal"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Charity account request modal.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Admin-Old-6.jpg" target="_blank"><img src="img/give-for-good/Admin-Old-6.jpg" alt="Old administrator panel 'Add Charity Account' page"></a>
+                                    <a href="img/give-for-good/Admin-New-6.jpg" target="_blank"><img src="img/give-for-good/Admin-New-6.jpg" alt="New administrator panel 'Add Charity Account' page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Add charity account page. This page was only accessible via the "Charity Account Requests" button on the old website, so I turned it into its own page on the new website with a link on the sidebar.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Ban Users Process</h4>
+                        <p>All administrators can ban users (charities can only ban users under their charity). If the user to be banned is a receiver, administrators can revoke their receiver status (and vice-versa). I decided to show this process as <span class="highlight">the ban users page required the most changes to improve the UX</span>.</p>
+                        <div class="slideshow slides-site-profile horizontal-slides dual-slides">
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Ban-Old-1.jpg" target="_blank"><img src="img/give-for-good/Ban-Old-1.jpg" alt="Old ban users page"></a>
+                                    <a href="img/give-for-good/Ban-New-1.jpg" target="_blank"><img src="img/give-for-good/Ban-New-1.jpg" alt="New ban users page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Ban users page. I renamed this page from "Manage Users" to "Ban Users" for clarity.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Ban-Old-2.jpg" target="_blank"><img src="img/give-for-good/Ban-Old-2.jpg" alt="Old ban users page"></a>
+                                    <a href="img/give-for-good/Ban-New-2.jpg" target="_blank"><img src="img/give-for-good/Ban-New-2.jpg" alt="New ban users page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Banned user appeals modal with details.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Ban-Old-3.jpg" target="_blank"><img src="img/give-for-good/Ban-Old-3.jpg" alt="Old ban users page"></a>
+                                    <a href="img/give-for-good/Ban-New-3.jpg" target="_blank"><img src="img/give-for-good/Ban-New-3.jpg" alt="New ban users page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Successful search for a receiver account. If the user is not a receiver, the button in the "Set Receiver Status" section turns into a "Make Receiver" button.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Ban-Old-4.jpg" target="_blank"><img src="img/give-for-good/Ban-Old-4.jpg" alt="Old ban users page"></a>
+                                    <a href="img/give-for-good/Ban-New-4.jpg" target="_blank"><img src="img/give-for-good/Ban-New-4.jpg" alt="New ban users page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Banned receiver account.</p>
+                            </div>
+                            <div class="slide dual-slide">
+                                <div class="two-img">
+                                    <a href="img/give-for-good/Ban-Old-5.jpg" target="_blank"><img src="img/give-for-good/Ban-Old-5.jpg" alt="Old ban users page"></a>
+                                    <a href="img/give-for-good/Ban-New-5.jpg" target="_blank"><img src="img/give-for-good/Ban-New-5.jpg" alt="New ban users page"></a>
+                                </div>
+                                <p class="notice">click image for full view</p>
+                                <p>Banned account page for the banned user. If the user attempts to go to any page that is not their profile page, they are redirected to this page where they can make an appeal.</p>
+                            </div>
+                        </div>
+                    </section>
+                </section>
+                <section id="reflections">
+                    <h3>Reflections</h3>
+                    <h4>Challenges</h4>
+                    <p>The stack chosen for this project is an uncommon one, so resources for this specific stack were uncommon. In addition, none of the developers on our team had experience with any single language/framework on the stack. We managed to learn enough in the 4-month span we were given to make major changes to the front and back-end.</p>
+                    <p>The previous team provided documentation on how to integrate certain features of the website. However, there was no list of bugs or unfinished tasks for us to work with. While the website audit provided structure to our work, a list of issues would have prevented problems during development. We did test many features of the website upon receiving the project code, but our testing was not methodical and we missed a few major test cases. This led to finding a large bug late into development that we were unable to fix and could have likely resolved if found at the beginning of development.</p>
+                    <h4>Final Thoughts</h4>
+                    <p>While I had some experience creating intangible products for others, this was the most comprehensive opportunity I had to work with a real-world client. I was fortunate enough to be able to enter this project with a reasonable set of expectations for myself, the team, and the project. In addition, my previous experience made me comfortable speaking to the client and asking the right questions. The client noted my practicality and praised my ability to think one-step ahead.</p>
+                    <p>This project grew my love for front-end and design work. I was able to do both front and back-end work for this project, but my fulfillment was in working on the parts of the website that users would interact with. Developing the Give for Good website showed that I have an eye for UI and UX work.I am grateful for the opportunity to work with the Give for Good foundation, my capstone instructor, and my teammates, who have all been warm and pleasant. I can only hope that the next development team I am part of is as welcoming as them.</p>
                 </section>
             </section>
         </div>

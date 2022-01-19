@@ -606,7 +606,9 @@ div.project-summary p:not(p.title) {
     padding: 0 24px;
 }
 
-.slide p {
+.slide p,
+.guidelines-caption,
+p.dash-caption {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -759,10 +761,10 @@ div.purple {
     background-color: #9164bf;
 }
 
-.guidelines-caption {
-    font-style: italic;
-    color: var(--grey);
-    text-align: center;
+.dash-gif {
+    display: block;
+    width: fit-content;
+    margin: auto;
 }
 
 .two-img {
@@ -895,6 +897,7 @@ div.purple {
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
         flex-direction: column;
+        gap: 8px;
     }
 
     .table {
@@ -916,14 +919,19 @@ div.purple {
     .two-img {
         flex-direction: row;
         margin: 0 12px;
+        align-items: stretch;
     }
 
     .two-img a {
-        width: calc(100% / 2);
+        height: 300px;
+        width: auto;
     }
 
-    div.slide div.post-slides a:first-of-type {
-        width: 30%;
+    .two-img img {
+        height: 100%;
+        width: 100%;
+        margin: auto;
+        object-fit: contain;
     }
 
 

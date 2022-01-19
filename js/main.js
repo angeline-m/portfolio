@@ -45,4 +45,10 @@ $(document).ready(function(){
         adaptiveHeight: true,
         arrows: true,
     });
+    $('.slides-site-profile').slick({
+        infinite: true,
+        dots: true,
+        adaptiveHeight: true,
+        arrows: true,
+    });
 });
