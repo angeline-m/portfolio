@@ -85,18 +85,21 @@
             <section class="content">
                 <section id="introduction">
                     <h3>Introduction</h3>
-                    <p>As the final project for my PHP/MySQL course, we were tasked with creating a full-CRUD catalog website. The project pages and its database were hosted on the institution's server, and the database would be administered via phpMyAdmin. The catalog could be on any topic, so long as it had the necessary features outlined below.</p>
+                    <p>As the final project for my PHP/MySQL course, we were tasked with creating a <span class="highlight">full-CRUD catalog website</span>. The project pages and its database were hosted on the institution's server, and the database would be administered via phpMyAdmin. The catalog could be on any topic, so long as it had the necessary features outlined below.</p>
                     <p class="features-title">Mandatory Featuers</p>
                         <ul class="features-list">
                             <li>Introductory homepage explaining the catalog</li>
                             <li>Entries with an image, title, category, at least one number field, and 8-10 fields in total</li>
+                            <li>Login to make changes to the database</li>
                             <li>Insert functionality with validation and required image</li>
                             <li>Ability to edit and delete existing catalog items</li>
                             <li>Main page that can show all entries and filter by 3 factors</li>
+                            <li>Random entry widget</li>
                             <li>Search feature</li>
                             <li>Single-item display page</li>
                         </ul>
-                    <p>I chose a video game catalog as it was easy to implement several categories to the entries including: genre, platform, price, and multiplayer availability. Furthermore, it was easy to add non-categorizable fields for each entry by including the developer, publisher, and release date.</p>
+                    <p>Additional features were encouraged and no limits were given with what we could add to our project.</p>
+                    <p>I chose a video game catalog as it was easy to implement several categories to the entries including: genre, platform, price, and multiplayer availability. Furthermore, it was easy to add extra fields such as the developer, publisher, and release date.</p>
                 </section>
                 <section id="tech">
                     <h3>Technology</h3>
@@ -127,22 +130,53 @@
                             <figcaption>MySQL</figcaption>
                         </figure>
                         <figure class="bootstrap">
-                            <svg viewBox="-35 -52 320 320">
+                            <svg viewBox="-58 -75 370 370">
                                 <path class="fill-light-grey hover-change" d="M0 222.991C0 241.223 14.779 256 33.009 256H222.99C241.223 256 256 241.221 256 222.991V33.01C256 14.777 241.221 0 222.991 0H33.01C14.777 0 0 14.779 0 33.009z"/>
                                 <path class="fill-white" d="M106.158 113.238V76.985h31.911c3.04 0 5.97.253 8.792.76 2.822.506 5.319 1.41 7.49 2.713 2.17 1.303 3.907 3.112 5.21 5.427 1.302 2.316 1.954 5.283 1.954 8.9 0 6.513-1.954 11.217-5.862 14.111-3.907 2.895-8.9 4.342-14.979 4.342zM72.075 50.5v155h75.112c6.947 0 13.713-.868 20.298-2.605 6.585-1.737 12.446-4.414 17.584-8.032 5.137-3.618 9.226-8.286 12.265-14.002 3.04-5.717 4.559-12.483 4.559-20.298 0-9.697-2.352-17.982-7.055-24.856-4.704-6.875-11.832-11.687-21.384-14.437 6.947-3.328 12.194-7.598 15.74-12.808 3.545-5.21 5.318-11.722 5.318-19.538 0-7.236-1.194-13.314-3.582-18.235-2.388-4.92-5.753-8.864-10.095-11.831-4.341-2.967-9.551-5.102-15.63-6.404-6.078-1.303-12.808-1.954-20.189-1.954zm34.083 128.515v-42.549h37.121c7.381 0 13.315 1.7 17.802 5.102 4.486 3.401 6.73 9.081 6.73 17.041 0 4.053-.688 7.381-2.063 9.986-1.375 2.605-3.22 4.668-5.536 6.187-2.315 1.52-4.993 2.605-8.032 3.257-3.04.65-6.223.976-9.552.976z"/>
                             </svg>
                             <figcaption>Bootstrap</figcaption>
                         </figure>
                     </div>
-                    <p>The website is built using <span class="highlight">PHP</span> v7.3 and <span class="highlight">MySQL</span>. As previously mentioned, <span class="highlight">phpMyAdmin</span> was used to manage the database. For time and ease of creation, <span class="highlight">Bootstrap</span> v4.0 was used to style the pages. A Bootstrap template was used for the main page. Custom <span class="highlight">CSS</span> was used sparingly to style the <span class="highlight">HTML</span>.</p>
+                    <p>The website is built using <span class="highlight">PHP</span> v7.3 and <span class="highlight">MySQL</span> queries. As previously mentioned, <span class="highlight">phpMyAdmin</span> was used to manage the database. For time and ease of creation, <span class="highlight">Bootstrap</span> v4.0 was used to style the pages. A Bootstrap template was used for the main page. Custom <span class="highlight">CSS</span> was used sparingly to style the <span class="highlight">HTML</span>.</p>
                 </section>
                 <section id="tasks">
                     <h3>Tasks</h3>
+                    <h4>Fulfilling Requirements</h4>
+                    <p>My project had all the mandatory requirements outlined above. Each entry contained the following information:</p>
+                    <ul class="features-list">
+                        <li>Title</li>
+                        <li>Description</li>
+                        <li>Developer</li>
+                        <li>Publisher</li>
+                        <li>Release Date</li>
+                        <li>Price (CAD)</li>
+                        <li>Platform</li>
+                        <li>Genre</li>
+                        <li>Multiplayer/Co-op</li>
+                        <li>Cover image (stored with a unique filename using uuid)</li>
+                        <li>Optional YouTube trailer video code</li>
+                    </ul>
+                    <p>Platform and genre are comma-separated fields as entries can have multiple platforms/genres. The platforms for this project are: Windows, Mac OS, Linux, PS4, Xbox One, Nintendo Switch, Android, and iOS. The genres for this project are Puzzle, Point and Click, Action, Adventure, and Platformer. The Multiplayer/Co-op field is a boolean. The YouTube trailer code, if provided, will show the trailer video on the game's page.</p>
+                    <p>By default, all entries will be displayed on the main page. The user can filter by platform, genre, and price (under $10, between $10-$20, over $20). They can also filter to view games with multiplayer/co-op.</p>
+                    <h4>Going Above and Beyond</h4>
+                    <p>Based off my experiences on catalog websites such as online stores and stock media site, I knew that a sorting option was necessary for a project like this. I added a <span class="highlight">sorting feature</span> in the form of links across the top of the main page. There are three ways to sort, each with two options:</p>
+                    <ul class="features-list">
+                        <li>Alphabetical (A-Z)</li>
+                        <li>Alphabetical (Z-A)</li>
+                        <li>Price (low-high)</li>
+                        <li>Price (high-low)</li>
+                        <li>Release Date (newest-oldest)</li>
+                        <li>Release Date (oldest-newest)</li>
+                    </ul>
+                    <p>The sorting feature works <span class="highlight">with and without filtering</span>. This feature took the most time to troubleshoot as it gave way to numerous bugs.</p>
+                    <p>While a search feature was required, the only way we were taught to implement it via a search page with a search form inside. From my time as a user on other websites, I knew that <span class="highlight">a site-wide search bar would give a better experience</span>. Compared to the sorting feature, this was relatively easy to implement following a little research and practice.</p>
                 </section>
                 <section id="reflections">
                     <h3>Reflections</h3>
                     <h4>Challenges</h4>
+                        <p>This was the most comprehensive project I'd ever created on my own. I wore many hats including front-end developer, back-end developer, designer, tester, etc. There weren't any big issues during the creation of this website, however hosting it later on became a challenge. Despite using the same version of PHP, many functions broke or operated differently. I had to use different logic for my back-end code and learn new functions or versions of existing functions to get the website to operate the same way it did on the institution's server. Thankfully, the hosted website works as intended.</p>
                     <h4>Final Thoughts</h4>
+                        <p>This project was pleasant from beginning to end. Despite being an old language, I enjoyed using PHP to create a full-CRUD website. Because it uses vanilla PHP, it didn't have unnecessary complications you'd encounter with modern frameworks like Laravel, React, or Vue. PHP was therefore a breeze, along with MySQL because of my familiarity with SQL prior. The project felt like the right size for a solo endeavor and is one of my favorite accomplishments so far.</p>
                 </section>
             </section>
         </div>

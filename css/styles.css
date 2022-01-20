@@ -96,6 +96,7 @@ h2:not(.sr-only) {
 
 a.highlight {
     text-decoration: underline;
+    transition: all 0.5s ease;
 }
 
 section.content a.highlight {
@@ -104,7 +105,6 @@ section.content a.highlight {
 
 a.highlight:hover {
     color: var(--light-grey);
-    transition: all 0.5s ease;
 }
 
 section.content div.slideshow {
@@ -255,12 +255,12 @@ span.job {
     -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
     transform: scale(1);
     animation: pulse 1.5s infinite;
+    transition: all 0.5s ease;
 }
 
 .project-btn:hover {
     color: var(--white);
     background-color: var(--purple);
-    transition: all 0.5s ease;
 }
 
 @keyframes pulse {
@@ -431,12 +431,12 @@ form button {
     border: 0;
     width: fit-content;
     margin: auto;
+    transition: all 0.5s ease;
 }
 
 form button:hover {
     cursor: pointer;
     background-color: var(--black);
-    transition: all 0.5s ease;
 }
 
 /* Projects page */
@@ -503,9 +503,12 @@ form button:hover {
     margin: 16px 0;
 }
 
+.table li a {
+    transition: all 0.5s ease;
+}
+
 .table li a:hover {
     color: var(--black);
-    transition: all 0.5s ease;
 }
 
 .project-link a {
@@ -516,12 +519,12 @@ form button:hover {
     font-size: 1rem;
     letter-spacing: 0.5px;
     background-color: var(--purple);
+    transition: all 0.5s ease;
 }
 
 .project-link:hover a {
     background-color: var(--black);
     color: var(--white);
-    transition: all 0.5s ease;
 }
 
 .site-link a {
@@ -584,22 +587,27 @@ div.project-summary p:not(p.title) {
 .stack-img svg {
     fill: var(--light-grey);
     height: 50px;
+    transition: all 0.3s ease;
 }
 
 .fill-white {
     fill: var(--white);
+    transition: all 0.3s ease;
 }
 
 .fill-light-grey {
     fill: var(--light-grey);
+    transition: all 0.3s ease;
 }
 
 .fill-grey {
     fill: var(--grey);
+    transition: all 0.3s ease;
 }
 
 .fill-black {
     fill: var(--black);
+    transition: all 0.3s ease;
 }
 
 .stack-img svg:hover,
@@ -905,6 +913,7 @@ ul.features-list li {
         box-shadow: none;
         -webkit-box-shadow: none;
         -moz-box-shadow: none;
+        transition: all 0.5s ease;
     }
 
     .project:nth-of-type(2),
@@ -918,7 +927,6 @@ ul.features-list li {
 
     .project:hover {
         background-color: var(--black);
-        transition: all 0.5s ease;
     }
 
     .project-title {
