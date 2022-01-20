@@ -453,6 +453,7 @@ form button:hover {
     -webkit-box-shadow: 1px 1px 10px 1px rgba(49,49,49,0.1);
     -moz-box-shadow: 1px 1px 10px 1px rgba(49,49,49,0.1);
     background-color: var(--white);
+    transition: all 0.5s ease;
 }
 
 .project img {
@@ -473,10 +474,22 @@ form button:hover {
     justify-content: space-between;
     padding: 0 16px;
     color: var(--grey);
+    font-style: italic;
+    transition: all 0.5s ease;
 }
 
 .project-title h3 {
    font-style: italic;
+}
+
+.project-title h3,
+.project-title i {
+    transition: all 0.5s ease;
+}
+
+.project:hover h3,
+.project:hover i {
+    color: var(--purple);
 }
 
 /* Project details page */
@@ -897,12 +910,15 @@ ul.features-list li {
     .project-title {
         font-size: 2rem;
         padding: 0 12px;
+        color: var(--white);
     }
 
     .project-title h3 {
         font-weight: 300;
+    }
+
+    .project:hover h3 {
         color: var(--white);
-        font-style: italic;
     }
 
     .project {
