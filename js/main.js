@@ -63,3 +63,7 @@ $(document).ready(function(){
         variableWidth: true,
     });
 });
+
+function symbolToggle(item) {
+    item.classList.toggle("fa-times")
+}
