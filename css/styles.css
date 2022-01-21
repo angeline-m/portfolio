@@ -336,6 +336,27 @@ footer i:hover {
     }
 }
 
+.slideshow-art {
+    margin: 60px 0 36px;
+    padding-top: 20px;
+}
+
+.slideshow-art a,
+.slideshow-art img {
+    height: 150px;
+}
+
+.slideshow-art img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+    width: auto;
+    object-fit: contain;
+}
+
+.slideshow-art div:hover img {
+    filter: none;
+}
+
 /* Contact Page */
 
 form {
