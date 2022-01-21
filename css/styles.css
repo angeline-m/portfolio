@@ -310,7 +310,7 @@ footer i:hover {
     display: flex;
     flex-direction: column;
     gap: 48px;
-    align-items: flex-start;
+    align-items: center;
     line-height: 1.5rem;
     letter-spacing: 0.15px;
     width: fit-content;
@@ -320,10 +320,10 @@ footer i:hover {
     flex-shrink: 1;
     max-width: 100%;
     border-radius: 50%;
-    box-shadow: 0 0 0 0 rgb(174, 158, 205);
+    /* box-shadow: 0 0 0 0 rgb(174, 158, 205);
     -webkit-box-shadow: 0 0 0 0 rgb(174, 158, 205);
     -moz-box-shadow: 0 0 0 0 rgb(174, 158, 205);
-    animation: beat 1.5s infinite;
+    animation: beat 1.5s infinite; */
 }
 
 @keyframes beat {
