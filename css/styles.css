@@ -2,7 +2,6 @@
 :root {
     --white: #fff;
     --background: #fdfdfd;
-    --card-bg: #f9f9fa;
     --light-grey: #c7c7c7;
     --grey: #7e7e7e;
     --black: #313131;
@@ -107,17 +106,8 @@ a.highlight:hover {
     color: var(--light-grey);
 }
 
-section.content div.slideshow {
-    margin: 24px 24px 48px;
-    padding-left: 12px;
-}
-
-.slide p.notice {
-    font-size: 0.8rem;
-    margin-bottom: 0;
-    color: var(--light-grey);
-    text-transform: uppercase;
-    font-style: normal;
+.center-text {
+    text-align: center;
 }
 
 /* Header Styles */
@@ -234,33 +224,6 @@ footer i:hover {
 
 .home-screen p:last-of-type {
     margin-top: 16px;
-}
-
-span.job {
-    color: var(--purple);
-    font-weight: 700;
-    mix-blend-mode: multiply;
-}
-
-.project-btn {
-    font-size: 1.25rem;
-    background-color: var(--white);
-    color: var(--grey);
-    text-transform: uppercase;
-    font-weight: 400;
-    padding: 12px 24px;
-    border-radius: 20px;
-    box-shadow: 0 0 0 0 rgba(255,255,255, 1);
-    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
-    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
-    transform: scale(1);
-    animation: pulse 1.5s infinite;
-    transition: all 0.5s ease;
-}
-
-.project-btn:hover {
-    color: var(--white);
-    background-color: var(--purple);
 }
 
 @keyframes pulse {
@@ -494,6 +457,48 @@ form button:hover {
 
 /* Project details page */
 
+section.content div.slideshow {
+    margin: 24px 24px 48px;
+    padding-left: 12px;
+}
+
+.slide p.notice,
+div.single-img p.notice {
+    font-size: 0.8rem;
+    margin-bottom: 0;
+    color: var(--light-grey);
+    text-transform: uppercase;
+    font-style: normal;
+    text-align: center;
+}
+
+span.job {
+    color: var(--purple);
+    font-weight: 700;
+    mix-blend-mode: multiply;
+}
+
+.project-btn {
+    font-size: 1.25rem;
+    background-color: var(--white);
+    color: var(--grey);
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 12px 24px;
+    border-radius: 20px;
+    box-shadow: 0 0 0 0 rgba(255,255,255, 1);
+    -webkit-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
+    -moz-box-shadow: 0 0 0 0 rgba(255,255,255, 1);
+    transform: scale(1);
+    animation: pulse 1.5s infinite;
+    transition: all 0.5s ease;
+}
+
+.project-btn:hover {
+    color: var(--white);
+    background-color: var(--purple);
+}
+
 .sidebar {
     margin-bottom: 24px;
     display: flex;
@@ -608,6 +613,11 @@ div.project-summary p:not(p.title) {
     transition: all 0.3s ease;
 }
 
+.fill-bw-grey {
+    fill: #afafaf;
+    transition: all 0.3s ease;
+}
+
 .fill-light-grey {
     fill: var(--light-grey);
     transition: all 0.3s ease;
@@ -624,12 +634,22 @@ div.project-summary p:not(p.title) {
 }
 
 .stack-img svg:hover,
+.stack-img svg:hover rect,
 .stack-img svg:hover path.hover-change,
 .livewire svg:hover path.hover-change,
 .php svg:hover .hover-change {
     fill: var(--purple);
     transition: all 0.3s ease;
 }
+
+.stack-img svg:hover path.hover-change-light {
+    fill: #c7b7e7;
+}
+
+.stack-img svg:hover path.hover-change-dark {
+    fill: #9683bb;
+}
+
 
 .stack-img figure {
     display: flex;
@@ -655,7 +675,7 @@ div.project-summary p:not(p.title) {
 
 .slide p,
 .guidelines-caption,
-p.dash-caption {
+p.gif-caption {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -671,7 +691,8 @@ p.dash-caption {
     margin: 0 auto;
 }
 
-.slide a:hover {
+.slide a:hover,
+a.page-img-link {
     cursor: zoom-in;
 }
 
@@ -682,6 +703,27 @@ p.dash-caption {
 
 .slick-prev:before, .slick-next:before{
     color:var(--purple);
+}
+
+.project-gif {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+
+.two-img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 12px;
+    width: auto;
+}
+
+.page-img-link,
+.page-img {
+    display: block;
+    width: 100%;
 }
 
 /* Give for Good page */
@@ -808,21 +850,6 @@ div.purple {
     background-color: #9164bf;
 }
 
-.dash-gif {
-    display: block;
-    width: fit-content;
-    margin: auto;
-}
-
-.two-img {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 12px;
-    width: auto;
-}
-
 /* Catalog project page */
 
 p.features-title {
@@ -833,15 +860,34 @@ p.features-title {
 }
 
 ul.features-list {
+    list-style: circle;
+}
+
+.features-list {
     font-size: 1rem;
     color: var(--grey);
-    list-style: circle;
     margin-left: 36px;
     font-size: 0.95rem;
 }
 
-ul.features-list li {
+.features-list li {
     margin: 4px 0;
+}
+
+span.lg-feature {
+    color: var(--light-grey);
+    font-weight: 600;
+}
+
+/* eTools project page */
+
+.orders-list span.highlight {
+    font-weight: 600;
+}
+
+.orders-list,
+.single-img ul {
+    margin-bottom: 24px;
 }
 
 @media (max-width: 330px) {
@@ -1104,6 +1150,13 @@ ul.features-list li {
         width: auto;
         margin: auto;
         object-fit: contain;
+    }
+
+    /* eTools project page */
+
+    .small-img {
+        width: 600px;
+        margin: auto;
     }
 
 }
