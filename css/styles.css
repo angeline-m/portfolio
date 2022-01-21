@@ -747,6 +747,63 @@ a.page-img-link {
     width: 100%;
 }
 
+.project-links {
+    width: 100%;
+    margin: 54px auto auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.project-links a {
+    display: block;
+}
+
+div.single-right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+div.single-left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.next-title,
+.prev-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.next-title p,
+.prev-title p {
+    font-weight: 600;
+    color: var(--purple);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.next-title i,
+.prev-title i {
+    color: var(--light-grey);
+    font-size: 1rem;
+}
+
+.project-links p.other-project-title {
+    color: var(--black);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin: 0 auto;
+    transition: all 0.5s ease;
+}
+
+.project-links a:hover p.other-project-title {
+    color: var(--grey);
+}
+
 /* Give for Good page */
 
 .gfg-logo {
