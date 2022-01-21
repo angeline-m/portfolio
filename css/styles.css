@@ -760,8 +760,13 @@ a.page-img-link {
     gap: 12px;
 }
 
+div.single-right {
+    justify-content: flex-end;
+}
+
 .project-links a {
     display: block;
+    width: fit-content;
 }
 
 a.next-project {
