@@ -764,12 +764,12 @@ a.page-img-link {
     display: block;
 }
 
-div.single-right {
+a.next-project {
     margin-left: auto;
     margin-right: 0;
 }
 
-div.single-left {
+a.prev-project {
     margin-left: 0;
     margin-right: auto;
 }
